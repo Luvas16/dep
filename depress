@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main(){
+    double A,B,C,sub0,x,y;
+    cin >> A >> B >> C;
+    if(){
+        cout << "Impossivel calcular" << endl;
+    }
+        
+    else{
+        sub0 = sqrt(pow(B,2)-4*A*C);
+            if(sub0 < 0){
+                cout << "Impossivel calcular" << endl;
+            }
+            else{
+                x = (-B + sub0)/(2*A);
+                y = (-B - sub0)/(2*A);
+                cout << fixed << setprecision(5) << "R1 = " << x << endl;
+                cout << fixed << setprecision(5) << "R2 = " << y << endl;
+            }
+    }
+}
